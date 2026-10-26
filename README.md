@@ -135,9 +135,9 @@ flutter test
 
 ## Download
 
-Android APK (v1.0.0): [Open the Releases page](https://github.com/YOUR_USERNAME/real_time_location_tracker/releases)
+Android APK (v1.0.0): [Open the Releases page](https://github.com/Rohan2002-33/real_time_location_tracker/releases)
 
-Direct download: [app-release.apk](https://github.com/YOUR_USERNAME/real_time_location_tracker/releases/latest/download/app-release.apk)
+Direct download: [app-release.apk](https://github.com/Rohan2002-33/real_time_location_tracker/releases/download/v1.0.0/app-release.apk)
 
 ### How to install
 
