@@ -133,6 +133,21 @@ flutter test
 
 ---
 
+## Download
+
+Android APK (v1.0.0): [Open the Releases page](https://github.com/YOUR_USERNAME/real_time_location_tracker/releases)
+
+Direct download: [app-release.apk](https://github.com/YOUR_USERNAME/real_time_location_tracker/releases/latest/download/app-release.apk)
+
+### How to install
+
+1. Download the APK on your Android phone.
+2. Tap the file. If Android blocks it, allow **Install unknown apps** for your browser or file manager.
+3. If Play Protect warns about an unrecognized app, choose **Install anyway**.
+4. Open the app and allow location access.
+
+> Location tracking, marker, polyline, camera animation and info window all work.
+
 ## 📄 License
 
 This project is open-source under the [MIT License](LICENSE).
