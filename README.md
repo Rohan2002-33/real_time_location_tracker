@@ -1,17 +1,43 @@
-# real_time_location_tracker
+# Real-Time Location Tracker
 
-A new Flutter project.
+Flutter app that tracks the user's live GPS position on Google Maps.
+Built for Module 18 assignment: Google Maps and Geolocator.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Smooth camera animation to the user's current location
+- Location fetched every 10 seconds with `geolocator`
+- Marker updates to the latest position
+- Polyline drawn through every recorded location
+- Tap marker to open an info window: "My current location" + latitude/longitude
+- Splash, permission handling (denied, blocked, GPS off), route history screens
+- Satellite/normal map toggle, follow-me toggle, pause/resume tracking
 
-A few resources to get you started if this is your first Flutter project:
+## Tech
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Flutter, `google_maps_flutter`, `geolocator`, `provider`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project structure
+
+```
+lib/
+  core/         constants, theme, formatters, routes
+  models/       TrackPoint
+  services/     LocationService (permissions + GPS)
+  controllers/  TrackingController (timer, path, distance)
+  screens/      splash, permission, tracker, history
+  widgets/      stats panel, map action button
+```
+
+## Setup
+
+1. Install Flutter and run `flutter doctor`.
+2. Clone the repo and run `flutter pub get`.
+3. Create a Google Maps API key with **Maps SDK for Android** enabled.
+4. Add the key to `android/local.properties` (this file is git-ignored):
+
+   ```
+   MAPS_API_KEY=your_api_key_here
+   ```
+
+5. Run on a device with Google Play services: `flutter run`.
